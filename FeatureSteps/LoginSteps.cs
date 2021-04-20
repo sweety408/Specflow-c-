@@ -2,6 +2,8 @@
 using MarsQA.Utilities;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.IO;
+using System.Reflection;
 using TechTalk.SpecFlow;
 
 namespace MarsQA.FeatureSteps
@@ -12,8 +14,8 @@ namespace MarsQA.FeatureSteps
         [Given(@"login to turn up portal")]
         public void GivenLoginToTurnUpPortal()
         {
-           // Define Driver
-            Driver = new ChromeDriver();
+            // Define Driver
+            Driver = new ChromeDriver(@"C:\Users\sweet\Downloads\chromedriver_win32");
 
             // Page object for Login Page
             LoginPage loginobj = new LoginPage();

@@ -11,4 +11,5 @@ namespace MarsQA.Utilities
         // Initialize common driver globally
         public static IWebDriver Driver { set; get; } 
     }
+    
 }

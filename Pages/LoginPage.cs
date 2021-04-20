@@ -9,11 +9,10 @@ using System.Threading;
 
 namespace MarsQA.Pages
 {
-    class LoginPage
+    class LoginPage 
     {
         public void LoginSteps(IWebDriver driver)
         {
-
             
             // Navigate the URL
             driver.Navigate().GoToUrl("http://localhost:5000/Account/Profile");
@@ -21,14 +20,11 @@ namespace MarsQA.Pages
             // Maximize the browser  
             driver.Manage().Window.Maximize();
 
-            // poppulate login page test data collection
-            ExcelLibHelper.PopulateInCollection(@"D:\MarsQA\MarsQA\MarsQA\Helpers\TestData.xls", "Login");
-            
             // Enter Email ID
-            driver.FindElement(By.XPath("//input[@placeholder='Email address']")).SendKeys(ExcelLibHelper.ReadData(2,"Username"));
+            driver.FindElement(By.XPath("//input[@placeholder='Email address']")).SendKeys("sweetypatelnz@gmail.com");
 
             // Eneter Password
-            driver.FindElement(By.XPath("//input[@placeholder='Password']")).SendKeys(ExcelLibHelper.ReadData(2,"Password"));
+            driver.FindElement(By.XPath("//input[@placeholder='Password']")).SendKeys("Initial$1993");
 
             // Click on login button
             driver.FindElement(By.XPath("//BUTTON[@class='fluid ui teal button'][text()='Login']")).Click();

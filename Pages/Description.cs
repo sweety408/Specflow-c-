@@ -55,8 +55,5 @@ namespace MarsQA.Pages
 
 
 
-//
-        //Update description
-       // driver.FindElement(By.XPath("//span[contains(text(),'my name is sweety Patel I have completed masters i')]")).SendKeys("")
-        
+
           

@@ -1,11 +1,12 @@
-﻿using OpenQA.Selenium;
+﻿using MarsQA.Utilities;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MarsQA.Pages
 {
-    class Languagepage 
+    class Languagepage : CommonDriver
     {
 
         public void LanguageSteps(IWebDriver driver)

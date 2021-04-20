@@ -8,7 +8,7 @@ namespace MarsQA.FeatureSteps
     [Binding]
      class ProfileSteps : CommonDriver
     {
-        [Given(@"click on profile submenu and verify the details")]
+        [Given(@"click on profile submenu  verify the details")]
         public void GivenClickOnProfileSubmenuAndVerifyTheDetails()
         {
             // page bject for Profile Page

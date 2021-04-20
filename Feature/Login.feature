@@ -1,5 +1,5 @@
 ﻿Feature: Login
-	I want to enter username and paswword verify
+	I want to enter username and password verify
 
 @mytag
 Scenario: Enter login details

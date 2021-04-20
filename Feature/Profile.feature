@@ -3,5 +3,5 @@
 
 @mytag
 Scenario: verify the profile details
-	Given click on profile submenu and verify the details
+	Given click on profile submenu verify the Details
 	
